@@ -1,6 +1,6 @@
 {
   "name": "scrapemail",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "An email scraper",
   "main": "app.js",
   "bin": {
@@ -17,5 +17,15 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "request": "^2.88.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacker719/scrapemail"
+  },
+  "keywords": [
+    "scrapemail",
+    "emailscraper",
+    "email",
+    "collecter"
+  ]
 }
