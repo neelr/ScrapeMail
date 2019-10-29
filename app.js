@@ -17,6 +17,7 @@ function getEmails (emailURL) {
                 })
             }
             res.data.match(url).map(x => {
+                if (!(x.includes("png") || x.includes("png") || x.includes("svg") || x.includes("jpeg"))) {
                 axios.get(x).then(y => {
                     z = y.data.match(email);
                     if (z) {
@@ -28,6 +29,7 @@ function getEmails (emailURL) {
                         })
                     }
                 }).catch(e => {return e});
+            }
             })
         }).catch(e => {
             console.log("\x1b[1m\x1b[31mNot a URL...\x1b[0m")
